@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LogoTrivia</string>
+    <string name="tvbienvenida">Bienvenido a Logo Trivia, ingresa tu nombre para comenzar ...</string>
+    <string name="etname">Escribe tu Nombre</string>
+    <string name="btncomenzar">COMENZAR</string>
+    <string name="tvSaludo">¡Hola, %1$s !</string>
+    <string name="tvquestion">¿A que logo pertecenece la imagen?</string>
+    <string name="rb">Pertenece a Facebook</string>
+    <string name="rb2">Pertenece a Twitter</string>
+    <string name="rb3">Pertenece a Whathsapp</string>
+    <string name="rb4">Pertenece a Instagram</string>
+    <string name="btnenviar">ENVIAR</string>
+    <string name="tvcorrect">¡Genial %1$s !, Ganaste</string>
+    <string name="btntryagain">INTENTALO OTRA VEZ </string>
+    <string name="tvincorrect">Bueno, te equivocaste %1$s , ¡intentalo otravez ! </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,53 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- Welcome Fragment -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="cl.bootcamp.logotrivia.WelcomeFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+    <!-- Question Fragment -->
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="cl.bootcamp.logotrivia.QuestionFragment"
+        android:label="Pregunta"
+        tools:layout="@layout/fragment_question">
+        <action
+            android:id="@+id/action_questionFragment_to_correctAnswerFragment"
+            app:destination="@id/correctAnswerFragment" />
+        <action
+            android:id="@+id/action_questionFragment_to_incorrectFragment"
+            app:destination="@id/incorrectFragment" />
+    </fragment>
+
+    <!-- Correct Answer Fragment -->
+    <fragment
+        android:id="@+id/correctAnswerFragment"
+        android:name="cl.bootcamp.logotrivia.CorrectAnswerFragment"
+        android:label="Respuesta Correcta"
+        tools:layout="@layout/fragment_correct_answer">
+        <action
+            android:id="@+id/action_correctAnswerFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+    <!-- Incorrect Answer Fragment -->
+    <fragment
+        android:id="@+id/incorrectFragment"
+        android:name="cl.bootcamp.logotrivia.IncorrectFragment"
+        android:label="Respuesta Incorrecta"
+        tools:layout="@layout/fragment_incorrect">
+        <action
+            android:id="@+id/action_incorrectFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+</navigation>
